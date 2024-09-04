@@ -1,0 +1,10 @@
+cd C:\Users\Sim Sheng Qin\Documents\GitHub\first-game-in-godot\First Game\
+
+scp -i my-pc-keypair.pem -r ./linux-server ec2-user@ec2-52-221-181-92.ap-southeast-1.compute.amazonaws.com:~/.
+
+ssh -i lmy-pc-keypair.pem ec2-user@ec2-52-221-181-92.ap-southeast-1.compute.amazonaws.com
+
+chmod u+x linux-server/*
+"./linux-server/First Game.sh" &
+ps -A | grep First
+kill <Process-id> for both

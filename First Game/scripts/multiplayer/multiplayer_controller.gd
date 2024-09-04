@@ -87,8 +87,3 @@ func _set_alive():
 	print("alive again!")
 	alive = true
 	Engine.time_scale = 1.0
-
-
-
-
-
